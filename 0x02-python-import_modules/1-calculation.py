@@ -6,13 +6,7 @@ if __name__ == "__main__":
     a = 10
     b = 5
 
-    operations = [
-            (add, "+"),
-            (sub, "-"),
-            (mul, "*"),
-            (div, "/")
-        ]
-
-    for operation, symbol in operations:
-        result = operation(a, b)
-        print("{} {} {} = {}".format(a, symbol, b, result))
+    print("{} = {} = {}".format(a, b, add(a, b)))
+    print("{} - {} = {}".format(a, b, sub(a, b)))
+    print("{} * {} = {}".format(a, b, mul(a, b)))
+    print("{} / {} = {}".format(a, b, div(a, b)))
