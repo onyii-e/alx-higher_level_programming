@@ -25,17 +25,17 @@ listint_t *add_nodeint(listint_t **head, const int n)
 /**
  * is_palindrome - identify is a syngle linked list is palindrome
  * @head: head of listint_t
- * Return: 1 if it is palindrom else)
+ * Return: 1 if it is palindrom else 0
  */
 
 int is_palindrome(listint_t **head)
 {
 	listint_t *head2 = *head;
-	listint_t *aux = NULL, * aux2 = NULL;
+	listint_t *aux = NULL, *aux2 = NULL;
 
 	if (*head == NULL || head2->next == NULL)
 		return (1);
-	while (head2 !=NULL)
+	while (head2 != NULL)
 	{
 		add_nodeint(&aux, head2->n);
 		head2 = head2->next;
@@ -43,7 +43,7 @@ int is_palindrome(listint_t **head)
 	aux2 = aux;
 	while (*head != NULL)
 	{
-		if ((*head) ->n != aux2->n)
+		if ((*head)->n != aux2->n)
 		{
 			free_listint(aux);
 				return (0);
