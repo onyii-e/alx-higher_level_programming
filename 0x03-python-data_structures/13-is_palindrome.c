@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * add_nodient - adds a new node at the beginning of a listint_list
+ * add_nodeint - adds a new node at the beginning of a listint_t list
  * @head: head of listint_t
  * @n: int to add in listint_t list
  * Return: address of new element, or NULL if it failed
