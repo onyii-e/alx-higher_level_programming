@@ -5,7 +5,7 @@ def roman_to_int(roman_string):
 
     roman_numerals = {
             'I': 1, 'X': 10, 'L': 50, 'V': 5,
-            'C': 100, 'D' : 500, 'M': 1000
+            'C': 100, 'D': 500, 'M': 1000
             }
 
     result = 0
