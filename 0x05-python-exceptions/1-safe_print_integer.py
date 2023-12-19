@@ -8,10 +8,10 @@ def safe_print_integer(value):
 
     Returns:
         If a TypeError or ValueError occurs - False
-        otherwise - True
+        Otherwise - True
     """
     try:
-        print("{:d}".formatvalue))
+        print("{:d}".format(value))
         return (True)
     except (TypeError, ValueError):
         return (False)
