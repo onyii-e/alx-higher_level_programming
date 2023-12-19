@@ -1,4 +1,4 @@
-#!/use/bin/python3
+#!/usr/bin/python3
 
 import sys
 
@@ -13,8 +13,8 @@ def safe_print_integer_err(value):
        value (int): The integer to print
 
     Return:
-        If a TypeError or ValueError occurs - false
-        otherwise - True
+        If a TypeError or ValueError occurs - False
+        Otherwise - True
     """
     try:
         print("{:d)".format(value))
