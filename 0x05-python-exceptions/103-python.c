@@ -31,17 +31,17 @@ void print_python_bytes(PyObject *p)
 	char *string = NULL;
 
 	fflush(stdout);
-	printf("['] bytes object info\n");
+	printf("[.] bytes object info\n");
 	if (!PyBytes_CheckExact(p))
 	{
-		printf(" [ERROR] Invalid Bytes Object\n");
+		printf("  [ERROR] Invalid Bytes Object\n");
 		return;
 	}
 	size = PyBytes_Size(p);
-	printf(" size: %zd\n", size);
+	printf("  size: %zd\n", size);
 	string = (assert(PyBytes_Check(p)), (((PyBytesObject *)(p))->ob_sval));
-	printf(" trying string: %s\n", string);
-	printf(" first %zd bytes:", size < 10 ? size + 1 : 10);
+	printf("  trying string: %s\n", string);
+	printf("  first %zd bytes:", size < 10 ? size + 1 : 10);
 	while (i < size + 1 && i < 10)
 	{
 		printf(" %02hhx", string[i]);
@@ -78,5 +78,5 @@ void print_python_list(PyObject *p)
 		}
 	}
 	else
-		printf(" [ERROR] Invalid List Object\n");
+		printf("  [ERROR] Invalid List Object\n");
 }
