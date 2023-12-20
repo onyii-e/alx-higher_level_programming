@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-: wq
+
 """Define a class Square."""
 
 
