@@ -14,7 +14,7 @@ class Rectangle:
     print_symbol = "#"
 
     def __init__(self, width=0, height=0):
-        """Initialize anew Rectangle.
+        """Initialize a new Rectangle.
 
         Args:
             width (int): The width of the new rectangle.
@@ -97,7 +97,7 @@ class Rectangle:
 
     rect = []
     for i in range(self.__height):
-        [rect.append(str(self.priny_symbol)) for j in range(self.__width)]
+        [rect.append(str(self.print_symbol)) for j in range(self.__width)]
         if i != self.__height - 1:
             rect.append("\n")
         return ("".join(rect))
