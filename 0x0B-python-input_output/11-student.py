@@ -5,7 +5,6 @@
 class Student:
     """Represent a student."""
 
-
     def __init(self, first_name, last_name, age):
         """Initialize anew Student.
 
