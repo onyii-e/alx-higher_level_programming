@@ -29,7 +29,7 @@ if __name__ == "__main__":
     count = 0
 
     try:
-        for line in sys. stdin:
+        for line in sys.stdin:
             if count == 10:
                 print_stats(size, status_codes)
                 count = 1
